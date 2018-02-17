@@ -1,5 +1,12 @@
 // Constructor function to create treeview
 let obj = {id: "1", parent_id: null, name: "root", children: [{id: "2", parent_id: "1", name: "child1", children:[{id: "5", parent_id: "2", name: "child11"}]}, {id: "3", parent_id: "1", name: "child2", children:[{id: "4", parent_id: "3", name: "child21"},{id: "6", parent_id: "3", name: "child22"}]},{id: "7", parent_id: "1", name: "child3", children: [{id: "8", parent_id: "7", name: "child31"}]}]}; //Object.assign({}, jsonObj);
+/**
+ * 
+ * @param {*} id int
+ * @param {*} parentId int or null for root element
+ * @param {*} name name of each node
+ * @param {*} children an array of object
+ */
 function TreeView (id,parentId,name,children) {
     this.id = id;
     this.parent_id = parentId;
